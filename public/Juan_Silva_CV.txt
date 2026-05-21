@@ -1,0 +1,22 @@
+Juan Silva - Desarrollador Full Stack JR
+
+Correo: juansilva200310@gmail.com
+Ubicación: Nuevo León, México
+
+Perfil:
+Desarrollador enfocado en aplicaciones web modernas, APIs REST y experiencias interactivas.
+
+Educación:
+- Licenciatura en Multimedia y Animación Digital
+- Facultad de Ciencias Físico Matemáticas – UANL
+- 2020 - Presente
+
+Habilidades Técnicas:
+- React, Tailwind CSS, JavaScript, HTML5, CSS3
+- Node.js, Express, PHP, APIs REST
+- MongoDB, MySQL
+- Git, GitHub, Visual Studio Code
+
+Proyectos Destacados:
+- Game Paradise: Marketplace web Full Stack para compra y venta de videojuegos
+- Historia de los Mundiales: Plataforma informativa con gestión multimedia
