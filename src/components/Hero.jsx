@@ -2,8 +2,8 @@ import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
 import SectionButton from './ui/SectionButton'
 
-const baseUrl = import.meta.env.BASE_URL
-const resumeUrl = `${baseUrl}CV_Juan_Silva.pdf`
+// Coloca CV_Juan_Silva.pdf en public/ — en producción: /Portafolio/CV_Juan_Silva.pdf
+const resumeUrl = `${import.meta.env.BASE_URL}CV_Juan_Silva.pdf`
 
 export default function Hero() {
   return (

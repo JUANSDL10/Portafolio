@@ -1,6 +1,6 @@
 import {
   SiHtml5,
-  SiCss3,
+  SiCss,
   SiJavascript,
   SiReact,
   SiTailwindcss,
@@ -10,8 +10,8 @@ import {
   SiMongodb,
   SiMysql,
   SiGit,
-  SiVisualstudiocode,
 } from 'react-icons/si'
+import { VscVscode } from 'react-icons/vsc'
 import { FaArrowRight, FaGithub } from 'react-icons/fa'
 
 export const skills = [
@@ -19,7 +19,7 @@ export const skills = [
     title: 'Frontend',
     items: [
       { name: 'HTML5', icon: SiHtml5 },
-      { name: 'CSS3', icon: SiCss3 },
+      { name: 'CSS3', icon: SiCss },
       { name: 'JavaScript', icon: SiJavascript },
       { name: 'React.js', icon: SiReact },
       { name: 'Tailwind CSS', icon: SiTailwindcss },
@@ -46,7 +46,7 @@ export const skills = [
     items: [
       { name: 'Git', icon: SiGit },
       { name: 'GitHub', icon: FaGithub },
-      { name: 'VS Code', icon: SiVisualstudiocode },
+      { name: 'VS Code', icon: VscVscode },
     ],
   },
 ]
@@ -69,17 +69,17 @@ export const projects = [
     github: 'https://github.com/Gamer-red/Mi_prograweb2',
   },
   {
-    name: 'Historia de los Mundiales',
-    description: 'Plataforma web informativa con gestión de contenido multimedia.',
+    name: 'Portafolio Profesional',
+    description: 'Portafolio personal con React, Vite y despliegue automatizado en GitHub Pages.',
     features: [
-      'PHP MVC',
-      'MySQL',
-      'Sistema de usuarios',
-      'Comentarios y publicaciones',
-      'SQL avanzado',
-      'Responsive design',
+      'React + Vite',
+      'Tailwind CSS',
+      'Framer Motion',
+      'Navegación por anclas (#sections)',
+      'Formulario Formspree',
+      'Deploy con gh-pages',
     ],
-    tech: ['PHP', 'MySQL', 'JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/JUANSDL/BDM',
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Framer Motion'],
+    github: 'https://github.com/JUANSDL10/Portafolio',
   },
 ]
