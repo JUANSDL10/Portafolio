@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import { FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'
 import SectionTitle from './SectionTitle'
-import GlassCard from './ui/GlassCard'
+import PortfolioQR from './PortfolioQR'
 
 export default function Contact() {
   return (
@@ -59,6 +59,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
+          <PortfolioQR />
         </motion.div>
       </div>
     </section>
