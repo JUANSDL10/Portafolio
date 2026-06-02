@@ -1,22 +1,54 @@
-import { handleSectionClick } from '../../utils/scrollToSection'
+import { motion } from 'framer-motion'
+import { scrollToSection } from '../../utils/scrollToSection'
 
-export default function SectionButton({ href, children, variant = 'primary' }) {
-  const baseStyles =
-    'inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold transition duration-200'
-  const variants = {
-    primary: 'bg-accent text-slate-950 shadow-lg shadow-accent/20 hover:bg-sky-400',
-    secondary: 'border border-slate-700 bg-white/5 text-slate-100 hover:border-slate-500 hover:bg-white/10',
+/**
+ * SectionButton Component - Animated button for navigation and actions
+ * Supports magnetic hover effect and smooth scroll
+ */
+export default function SectionButton({
+  href,
+  children,
+  variant = 'primary',
+  size = 'md',
+  icon: Icon,
+  onClick,
+}) {
+  const handleClick = (e) => {
+    if (href?.startsWith('#')) {
+      e.preventDefault()
+      scrollToSection(href.substring(1))
+    }
+    if (onClick) {
+      onClick(e)
+    }
   }
 
-  const isHashLink = href?.startsWith('#')
+  const baseStyles = 'inline-flex items-center justify-center gap-2 font-semibold transition-all duration-300 cursor-pointer rounded-lg'
+
+  const variants = {
+    primary: 'bg-gradient-to-r from-electric-blue to-neon-cyan text-dark-navy hover:shadow-glow',
+    secondary: 'border-2 border-electric-blue text-electric-blue hover:bg-electric-blue/10',
+    tertiary: 'bg-charcoal-black border border-electric-blue/40 text-electric-blue hover:border-electric-blue/80 hover:bg-electric-blue/5',
+    ghost: 'text-electric-blue hover:text-neon-cyan transition-colors',
+  }
+
+  const sizes = {
+    sm: 'px-4 py-2 text-sm',
+    md: 'px-6 py-3 text-base',
+    lg: 'px-8 py-4 text-lg',
+  }
 
   return (
-    <a
-      href={href}
-      onClick={isHashLink ? (e) => handleSectionClick(e, href) : undefined}
-      className={`${baseStyles} ${variants[variant]}`}
+    <motion.a
+      href={href || '#'}
+      onClick={handleClick}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      className={`${baseStyles} ${variants[variant]} ${sizes[size]}`}
     >
-      {children}
-    </a>
+      {Icon && <Icon size={20} />}
+      <span>{children}</span>
+    </motion.a>
   )
 }
+
