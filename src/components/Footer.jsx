@@ -13,7 +13,7 @@ export default function Footer() {
     {
       icon: FaLinkedin,
       label: 'LinkedIn',
-      href: 'https://linkedin.com',
+      href: 'https://www.linkedin.com/in/juan-silva-de-leon-a8a33826b/',
     },
     {
       icon: FaTwitter,

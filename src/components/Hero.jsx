@@ -113,7 +113,7 @@ export default function Hero() {
                 <FaGithub size={18} />
               </motion.a>
               <motion.a
-                href="https://linkedin.com/in/juansilva"
+                href="https://www.linkedin.com/in/juan-silva-de-leon-a8a33826b/"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.12, y: -3 }}

@@ -27,7 +27,7 @@ export default function Contact() {
 
   const socialLinks = [
     { icon: FaGithub, label: 'GitHub', href: 'https://github.com/JUANSDL10' },
-    { icon: FaLinkedin, label: 'LinkedIn', href: 'https://linkedin.com' },
+    { icon: FaLinkedin, label: 'LinkedIn', href: 'https://www.linkedin.com/in/juan-silva-de-leon-a8a33826b/' },
   ]
 
   return (
