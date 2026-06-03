@@ -7,9 +7,11 @@ import Skills from './components/Skills'
 import WebDevelopmentSection from './components/WebDevelopmentSection'
 import GameDevelopmentSection from './components/GameDevelopmentSection'
 import Art3DSection from './components/Art3DSection'
+import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { WebGLShader } from './components/ui/web-gl-shader'
 import { useScrollProgress } from './hooks/useScrollProgress'
 
 function App() {
@@ -17,6 +19,11 @@ function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-dark-navy via-charcoal-black to-dark-navy text-pure-white overflow-x-hidden">
+      {/* WebGL Shader – fondo animado de ondas cromáticas */}
+      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -60, opacity: 0.18, mixBlendMode: 'screen' }}>
+        <WebGLShader />
+      </div>
+
       {/* Global Background Elements */}
       <div className="fixed inset-0 -z-40 pointer-events-none">
         {/* Main gradient blobs - animated */}
@@ -83,6 +90,7 @@ function App() {
           <div id="art3d">
             <Art3DSection />
           </div>
+          <Projects />
           <Experience />
           <Contact />
         </main>

@@ -48,7 +48,7 @@ export default function Footer() {
               JS
             </h3>
             <p className="text-gray-muted text-sm">
-              Full Stack Developer & Digital Artist crafting interactive experiences.
+              Desarrollador Full Stack & Artista Digital creando experiencias interactivas.
             </p>
           </motion.div>
 
@@ -59,26 +59,26 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-pure-white font-bold mb-4">Quick Links</h4>
+            <h4 className="text-pure-white font-bold mb-4">Accesos Rápidos</h4>
             <ul className="space-y-2 text-sm text-gray-muted">
               <li>
                 <a href="#home" className="hover:text-electric-blue transition-colors">
-                  Home
+                  Inicio
                 </a>
               </li>
               <li>
                 <a href="#skills" className="hover:text-electric-blue transition-colors">
-                  Skills
+                  Habilidades
                 </a>
               </li>
               <li>
                 <a href="#projects" className="hover:text-electric-blue transition-colors">
-                  Projects
+                  Proyectos
                 </a>
               </li>
               <li>
                 <a href="#contact" className="hover:text-electric-blue transition-colors">
-                  Contact
+                  Contacto
                 </a>
               </li>
             </ul>
@@ -91,7 +91,7 @@ export default function Footer() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <h4 className="text-pure-white font-bold mb-4">Connect</h4>
+            <h4 className="text-pure-white font-bold mb-4">Conectar</h4>
             <div className="flex items-center gap-4">
               {socialLinks.map((link) => {
                 const Icon = link.icon
@@ -123,16 +123,16 @@ export default function Footer() {
           className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-gray-muted"
         >
           <p>
-            © {currentYear} Juan Silva. Designed with <span className="text-neon-cyan">✨</span> using React, Tailwind
+            © {currentYear} Juan Silva. Diseñado con <span className="text-neon-cyan">✨</span> usando React, Tailwind
             CSS & Framer Motion.
           </p>
           <div className="flex items-center gap-4 text-xs">
             <a href="#privacy" className="hover:text-electric-blue transition-colors">
-              Privacy Policy
+              Política de Privacidad
             </a>
             <span className="text-electric-blue/20">•</span>
             <a href="#terms" className="hover:text-electric-blue transition-colors">
-              Terms of Service
+              Términos de Uso
             </a>
           </div>
         </motion.div>

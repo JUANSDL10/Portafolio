@@ -13,13 +13,13 @@ export default function Contact() {
     },
     {
       icon: FaMapMarkerAlt,
-      label: 'Location',
+      label: 'Ubicación',
       value: 'Nuevo León, México',
       link: '#',
     },
     {
       icon: FaPhone,
-      label: 'Phone',
+      label: 'Teléfono',
       value: '+52 (555) 123-4567',
       link: 'tel:+525551234567',
     },
@@ -39,9 +39,9 @@ export default function Contact() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          subtitle="Let's Connect"
-          title="Get In Touch"
-          description="Have a project in mind? Let's collaborate and create something amazing together."
+          subtitle="Conectemos"
+          title="Contáctame"
+          description="¿Tienes un proyecto en mente? Colaboremos y creemos algo increíble juntos."
           align="center"
         />
 
@@ -89,7 +89,7 @@ export default function Contact() {
             {/* Social Links */}
             <motion.div variants={itemVariants} className="pt-4">
               <p className="text-xs uppercase tracking-widest text-electric-blue/70 font-semibold mb-4">
-                Follow Me
+                Sígueme
               </p>
               <div className="flex gap-3">
                 {socialLinks.map((link) => {
@@ -135,7 +135,7 @@ export default function Contact() {
                   {/* Name Input */}
                   <div className="group/input">
                     <label htmlFor="name" className="block text-sm font-semibold text-pure-white mb-3">
-                      Name
+                      Nombre
                     </label>
                     <div className="relative">
                       <input
@@ -172,14 +172,14 @@ export default function Contact() {
                 {/* Subject Input */}
                 <div className="group/input">
                   <label htmlFor="subject" className="block text-sm font-semibold text-pure-white mb-3">
-                    Subject
+                    Asunto
                   </label>
                   <div className="relative">
                     <input
                       type="text"
                       id="subject"
                       name="subject"
-                      placeholder="Project collaboration"
+                      placeholder="Colaboración en proyecto"
                       required
                       className="w-full bg-transparent border-b border-electric-blue/30 px-0 py-3 text-pure-white placeholder-gray-muted outline-none transition-all focus:border-electric-blue group-hover/input:border-electric-blue/50"
                     />
@@ -190,14 +190,14 @@ export default function Contact() {
                 {/* Message Input */}
                 <div className="group/input">
                   <label htmlFor="message" className="block text-sm font-semibold text-pure-white mb-3">
-                    Message
+                    Mensaje
                   </label>
                   <div className="relative">
                     <textarea
                       id="message"
                       name="message"
                       rows="6"
-                      placeholder="Tell me about your project..."
+                      placeholder="Cuéntame sobre tu proyecto..."
                       required
                       className="w-full bg-transparent border-b border-electric-blue/30 px-0 py-3 text-pure-white placeholder-gray-muted outline-none transition-all focus:border-electric-blue resize-none group-hover/input:border-electric-blue/50"
                     ></textarea>
@@ -212,7 +212,7 @@ export default function Contact() {
                   whileHover={{ scale: 1.02 }}
                   whileTap={{ scale: 0.98 }}
                 >
-                  Send Message
+                  Enviar Mensaje
                 </motion.button>
               </div>
 
@@ -231,7 +231,7 @@ export default function Contact() {
           className="text-center px-6 py-8 rounded-xl border border-electric-blue/20 bg-dark-navy/40 backdrop-blur-sm"
         >
           <p className="text-gray-muted mb-4">
-            Looking for more details? Download my CV or explore my projects above.
+            ¿Quieres más detalles? Descarga mi CV o explora mis proyectos arriba.
           </p>
           <motion.a
             href="#home"
@@ -240,7 +240,7 @@ export default function Contact() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Back to Top ↑
+            Volver al Inicio ↑
           </motion.a>
         </motion.div>
       </div>

@@ -6,44 +6,44 @@ const Art3DSection = () => {
   const artworks = [
     {
       id: 1,
-      title: 'Character Models',
-      category: 'Character Design',
-      tags: ['3D Modeling', 'Sculpting', 'Rigging'],
+      title: 'Modelos de Personajes',
+      category: 'Diseño de Personajes',
+      tags: ['Modelado 3D', 'Escultura', 'Rigging'],
       height: 'tall',
     },
     {
       id: 2,
-      title: 'Environment Assets',
-      category: 'Environment',
-      tags: ['Level Design', 'Texturing'],
+      title: 'Assets de Entorno',
+      category: 'Entornos',
+      tags: ['Level Design', 'Texturizado'],
       height: 'short',
     },
     {
       id: 3,
-      title: 'Animation Reels',
-      category: 'Motion',
-      tags: ['Keyframe Animation', 'Motion Capture'],
+      title: 'Reels de Animación',
+      category: 'Movimiento',
+      tags: ['Animación por Claves', 'Motion Capture'],
       height: 'short',
     },
     {
       id: 4,
-      title: 'Material Studies',
-      category: 'Technical Art',
-      tags: ['PBR', 'Shader Work'],
+      title: 'Estudios de Materiales',
+      category: 'Arte Técnico',
+      tags: ['PBR', 'Shaders'],
       height: 'tall',
     },
     {
       id: 5,
-      title: 'VFX & Particles',
-      category: 'Effects',
-      tags: ['Particle Systems', 'Visual Effects'],
+      title: 'VFX & Partículas',
+      category: 'Efectos',
+      tags: ['Sistemas de Partículas', 'Efectos Visuales'],
       height: 'short',
     },
     {
       id: 6,
-      title: 'Concept Art',
-      category: 'Design',
-      tags: ['Digital Art', 'UI/UX Concepts'],
+      title: 'Arte Conceptual',
+      category: 'Diseño',
+      tags: ['Arte Digital', 'Conceptos UI/UX'],
       height: 'tall',
     },
   ]
@@ -58,9 +58,9 @@ const Art3DSection = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          subtitle="3D Art & Animation"
-          title="Digital Craftsmanship"
-          description="High-quality 3D art, animations, and visual effects created for games and interactive media."
+          subtitle="Arte 3D & Animación"
+          title="Arte Digital"
+          description="Arte 3D, animaciones y efectos visuales de alta calidad creados para videojuegos y medios interactivos."
           align="left"
         />
 
@@ -91,7 +91,7 @@ const Art3DSection = () => {
                 <div className="flex-1 flex items-center justify-center mb-4 rounded-lg bg-gradient-to-br from-electric-blue/5 to-neon-cyan/5 border border-electric-blue/20 group-hover:from-electric-blue/10 group-hover:to-neon-cyan/10 transition-all">
                   <div className="text-center">
                     <p className="text-4xl mb-2">🎨</p>
-                    <p className="text-sm text-gray-muted">Visual Preview</p>
+                    <p className="text-sm text-gray-muted">Vista Previa</p>
                   </div>
                 </div>
 
@@ -122,7 +122,7 @@ const Art3DSection = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="mt-16 md:mt-24 text-center"
         >
-          <p className="text-gray-muted mb-6">View my complete portfolio on ArtStation and other platforms</p>
+          <p className="text-gray-muted mb-6">Visita mi portafolio completo en ArtStation y otras plataformas</p>
           <motion.a
             href="https://artstation.com"
             target="_blank"
@@ -131,7 +131,7 @@ const Art3DSection = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Visit ArtStation →
+            Ver en ArtStation →
           </motion.a>
         </motion.div>
       </div>

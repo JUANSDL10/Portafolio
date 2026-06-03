@@ -18,37 +18,37 @@ export default function Skills() {
     {
       category: 'Frontend',
       skills: [
-        { name: 'React.js', icon: SiReact, level: 'Advanced' },
-        { name: 'TypeScript', icon: SiTypescript, level: 'Intermediate' },
-        { name: 'Tailwind CSS', icon: SiTailwindcss, level: 'Advanced' },
-        { name: 'Next.js', icon: SiReact, level: 'Intermediate' },
+        { name: 'React.js', icon: SiReact, level: 'Avanzado' },
+        { name: 'TypeScript', icon: SiTypescript, level: 'Intermedio' },
+        { name: 'Tailwind CSS', icon: SiTailwindcss, level: 'Avanzado' },
+        { name: 'Next.js', icon: SiReact, level: 'Intermedio' },
       ],
     },
     {
       category: 'Backend',
       skills: [
-        { name: 'Node.js', icon: SiNodedotjs, level: 'Advanced' },
-        { name: 'PHP', icon: FaPhp, level: 'Intermediate' },
-        { name: 'Express.js', icon: SiNodedotjs, level: 'Advanced' },
-        { name: 'REST APIs', icon: FaPhp, level: 'Advanced' },
+        { name: 'Node.js', icon: SiNodedotjs, level: 'Avanzado' },
+        { name: 'PHP', icon: FaPhp, level: 'Intermedio' },
+        { name: 'Express.js', icon: SiNodedotjs, level: 'Avanzado' },
+        { name: 'REST APIs', icon: FaPhp, level: 'Avanzado' },
       ],
     },
     {
-      category: 'Databases',
+      category: 'Bases de Datos',
       skills: [
-        { name: 'MongoDB', icon: SiMongodb, level: 'Advanced' },
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 'Intermediate' },
-        { name: 'MySQL', icon: SiPostgresql, level: 'Intermediate' },
-        { name: 'Firebase', icon: SiMongodb, level: 'Intermediate' },
+        { name: 'MongoDB', icon: SiMongodb, level: 'Avanzado' },
+        { name: 'PostgreSQL', icon: SiPostgresql, level: 'Intermedio' },
+        { name: 'MySQL', icon: SiPostgresql, level: 'Intermedio' },
+        { name: 'Firebase', icon: SiMongodb, level: 'Intermedio' },
       ],
     },
     {
-      category: 'Tools & DevOps',
+      category: 'Herramientas & DevOps',
       skills: [
-        { name: 'Git', icon: SiGit, level: 'Advanced' },
-        { name: 'Docker', icon: SiDocker, level: 'Intermediate' },
-        { name: 'Figma', icon: FaFigma, level: 'Advanced' },
-        { name: 'Vite', icon: SiNodedotjs, level: 'Advanced' },
+        { name: 'Git', icon: SiGit, level: 'Avanzado' },
+        { name: 'Docker', icon: SiDocker, level: 'Intermedio' },
+        { name: 'Figma', icon: FaFigma, level: 'Avanzado' },
+        { name: 'Vite', icon: SiNodedotjs, level: 'Avanzado' },
       ],
     },
   ]
@@ -62,9 +62,9 @@ export default function Skills() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          subtitle="Skills & Expertise"
-          title="Technical Proficiencies"
-          description="A comprehensive overview of my technical skills, expertise levels, and tools I work with daily."
+          subtitle="Habilidades & Experiencia"
+          title="Competencias Técnicas"
+          description="Un panorama completo de mis habilidades técnicas, niveles de experiencia y las herramientas con las que trabajo a diario."
           align="left"
         />
 
@@ -142,19 +142,19 @@ export default function Skills() {
         >
           {[
             {
-              title: 'Frontend Development',
+              title: 'Desarrollo Frontend',
               percentage: 90,
-              description: 'React, TypeScript, Modern CSS frameworks',
+              description: 'React, TypeScript, frameworks CSS modernos',
             },
             {
-              title: 'Backend Development',
+              title: 'Desarrollo Backend',
               percentage: 85,
-              description: 'Node.js, Express, Database Design',
+              description: 'Node.js, Express, diseño de bases de datos',
             },
             {
-              title: 'Full Stack Integration',
+              title: 'Integración Full Stack',
               percentage: 80,
-              description: 'End-to-end application development',
+              description: 'Desarrollo de aplicaciones de extremo a extremo',
             },
           ].map((skill, i) => (
             <motion.div

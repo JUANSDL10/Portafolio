@@ -6,34 +6,34 @@ import SectionHeader from './SectionHeader'
 export default function Experience() {
   const experiences = [
     {
-      type: 'Education',
-      title: 'Multimedia & Digital Animation',
+      type: 'Educación',
+      title: 'Multimedia & Animación Digital',
       institution: 'FCFM UANL',
-      period: '2020 - Present',
+      period: '2020 - Presente',
       location: 'Nuevo León, México',
-      description: 'Specialized studies in 3D modeling, animation, game development, and interactive media.',
-      highlights: ['3D Modeling & Sculpting', 'Character Animation', 'Game Development', 'Visual Effects'],
+      description: 'Estudios especializados en modelado 3D, animación, desarrollo de videojuegos y medios interactivos.',
+      highlights: ['Modelado 3D & Escultura', 'Animación de Personajes', 'Desarrollo de Juegos', 'Efectos Visuales'],
       icon: FaAward,
     },
     {
-      type: 'Professional',
-      title: 'Full Stack Development',
-      institution: 'Self-Taught & Projects',
-      period: '2022 - Present',
-      location: 'Remote',
-      description: 'Building production-ready web applications with modern tech stacks and best practices.',
-      highlights: ['MERN Stack', 'API Development', 'UI/UX Implementation', 'DevOps'],
+      type: 'Profesional',
+      title: 'Desarrollo Full Stack',
+      institution: 'Autodidacta & Proyectos',
+      period: '2022 - Presente',
+      location: 'Remoto',
+      description: 'Construcción de aplicaciones web listas para producción con stacks tecnológicos modernos y buenas prácticas.',
+      highlights: ['Stack MERN', 'Desarrollo de APIs', 'Implementación UI/UX', 'DevOps'],
       icon: FaCalendar,
     },
   ]
 
   const timeline = [
-    { year: '2020', event: 'Started multimedia studies at UANL' },
-    { year: '2021', event: 'Began learning web development' },
-    { year: '2022', event: 'Built first full stack project' },
-    { year: '2023', event: 'Expanded to game and 3D art' },
-    { year: '2024', event: 'Professional portfolio development' },
-    { year: '2025', event: 'Present - Continuing growth' },
+    { year: '2020', event: 'Inicio de estudios de multimedia en UANL' },
+    { year: '2021', event: 'Comienzo del aprendizaje de desarrollo web' },
+    { year: '2022', event: 'Primer proyecto Full Stack construido' },
+    { year: '2023', event: 'Expansión a juegos y arte 3D' },
+    { year: '2024', event: 'Desarrollo de portafolio profesional' },
+    { year: '2025', event: 'Presente – Crecimiento continuo' },
   ]
 
   return (
@@ -45,9 +45,9 @@ export default function Experience() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          subtitle="Journey & Experience"
-          title="Education & Timeline"
-          description="My academic background and professional development journey."
+          subtitle="Trayectoria & Experiencia"
+          title="Formación & Cronología"
+          description="Mi trayectoria académica y el camino de desarrollo profesional que he recorrido."
           align="left"
         />
 
@@ -130,7 +130,7 @@ export default function Experience() {
           viewport={{ once: true, margin: '-100px' }}
           className="relative"
         >
-          <h3 className="text-2xl font-bold text-pure-white mb-8">Timeline</h3>
+          <h3 className="text-2xl font-bold text-pure-white mb-8">Cronología</h3>
 
           {/* Timeline Line */}
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-electric-blue via-neon-cyan to-transparent transform md:-translate-x-1/2"></div>

@@ -7,37 +7,37 @@ export default function About() {
   const bentoItems = [
     {
       id: 1,
-      title: 'Professional Journey',
-      subtitle: 'FCFM UANL - Multimedia & Animation',
+      title: 'Trayectoria Profesional',
+      subtitle: 'FCFM UANL – Multimedia & Animación',
       description:
-        'Specialized in digital animation and multimedia development with a passion for interactive experiences. Currently exploring game development and 3D art creation.',
+        'Especializado en animación digital y desarrollo multimedia con pasión por las experiencias interactivas. Actualmente explorando el desarrollo de videojuegos y arte 3D.',
       icon: FaGraduationCap,
       span: 'md:col-span-2',
       accent: 'from-electric-blue to-neon-cyan',
     },
     {
       id: 2,
-      title: 'Mission',
-      subtitle: 'Create Impact',
-      description: 'Building digital solutions that combine technical excellence with creative innovation for modern experiences.',
+      title: 'Misión',
+      subtitle: 'Crear Impacto',
+      description: 'Construir soluciones digitales que combinen excelencia técnica e innovación creativa para experiencias modernas.',
       icon: FaBullseye,
       span: 'md:col-span-1',
       accent: 'from-neon-cyan to-electric-blue',
     },
     {
       id: 3,
-      title: 'Expertise',
+      title: 'Experiencia Técnica',
       subtitle: 'Full Stack Developer',
-      description: 'Frontend, Backend, Databases, DevOps, Game Dev & 3D. Production-ready code with creative flair.',
+      description: 'Frontend, Backend, Bases de Datos, DevOps, Juegos y Arte 3D. Código listo para producción con toque creativo.',
       icon: FaRocket,
       span: 'md:col-span-1',
       accent: 'from-electric-blue to-bright-cyan',
     },
     {
       id: 4,
-      title: 'Philosophy',
-      subtitle: 'User-Centric & Performance',
-      description: 'Every project delivers exceptional experiences with pixel-perfect design and optimized performance.',
+      title: 'Filosofía',
+      subtitle: 'Centrado en el Usuario & Rendimiento',
+      description: 'Cada proyecto entrega experiencias excepcionales con diseño pixel-perfect y rendimiento optimizado.',
       icon: FaHeart,
       span: 'md:col-span-2',
       accent: 'from-bright-cyan to-neon-cyan',
@@ -53,9 +53,9 @@ export default function About() {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          title="About Me"
-          highlight="& Vision"
-          subtitle="Dedicated Full Stack Developer & Digital Artist crafting premium interactive experiences"
+          title="Sobre Mí"
+          highlight="& Visión"
+          subtitle="Desarrollador Full Stack & Artista Digital creando experiencias interactivas de alto nivel"
           align="left"
           delay={0}
         />
@@ -136,10 +136,10 @@ export default function About() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
         >
           {[
-            { label: 'Projects', value: '10+', icon: '📦' },
-            { label: 'Technologies', value: '20+', icon: '⚙️' },
-            { label: 'Years Exp', value: '5+', icon: '📚' },
-            { label: 'Passion', value: '200%', icon: '🔥' },
+            { label: 'Proyectos', value: '10+', icon: '📦' },
+            { label: 'Tecnologías', value: '20+', icon: '⚙️' },
+            { label: 'Años Exp.', value: '5+', icon: '📚' },
+            { label: 'Pasión', value: '200%', icon: '🔥' },
           ].map((fact, i) => (
             <motion.div
               key={i}

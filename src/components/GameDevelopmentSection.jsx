@@ -6,25 +6,25 @@ import SectionHeader from './SectionHeader'
 const GameDevelopmentSection = () => {
   const games = [
     {
-      title: 'Game Project 1',
-      description: 'Action-packed gameplay with immersive mechanics',
-      tags: ['C++', 'Blueprints', 'Physics', 'AI'],
-      features: ['Advanced AI Systems', 'Optimized Rendering', 'Multiplayer Support'],
-      placeholder: 'Game 1',
+      title: 'Proyecto de Juego 1',
+      description: 'Juego de acción con mecánicas inmersivas y jugabilidad intensa',
+      tags: ['C++', 'Blueprints', 'Física', 'IA'],
+      features: ['Sistemas de IA avanzados', 'Renderizado optimizado', 'Soporte multijugador'],
+      placeholder: 'Juego 1',
     },
     {
-      title: 'Game Project 2',
-      description: 'Puzzle mechanics with artistic vision',
-      tags: ['C++', 'Procedural Generation', 'Audio Design'],
-      features: ['Procedural Levels', 'Dynamic Audio', 'Cross-platform'],
-      placeholder: 'Game 2',
+      title: 'Proyecto de Juego 2',
+      description: 'Mecánicas de puzzle con visión artística y diseño procedural',
+      tags: ['C++', 'Generación Procedural', 'Diseño de Audio'],
+      features: ['Niveles procedurales', 'Audio dinámico', 'Multiplataforma'],
+      placeholder: 'Juego 2',
     },
     {
-      title: 'Game Project 3',
-      description: 'Adventure game with rich storytelling',
-      tags: ['C#', 'Unity', 'Animation', 'Narrative'],
-      features: ['Complex Narratives', 'Beautiful Cinematics', 'Rich Interactions'],
-      placeholder: 'Game 3',
+      title: 'Proyecto de Juego 3',
+      description: 'Juego de aventura con narrativa rica e interacciones complejas',
+      tags: ['C#', 'Unity', 'Animación', 'Narrativa'],
+      features: ['Narrativas complejas', 'Cinemáticas cuidadas', 'Interacciones ricas'],
+      placeholder: 'Juego 3',
     },
   ]
 
@@ -37,9 +37,9 @@ const GameDevelopmentSection = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          subtitle="Game Development"
-          title="Gaming Portfolio"
-          description="Crafting engaging gameplay experiences with C++, C#, and industry-standard engines."
+          subtitle="Desarrollo de Videojuegos"
+          title="Portafolio de Juegos"
+          description="Creando experiencias de juego atractivas con C++, C# y motores de la industria como Unreal Engine y Unity."
           align="left"
         />
 
@@ -110,12 +110,12 @@ const GameDevelopmentSection = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="mt-16 md:mt-24 text-center"
         >
-          <p className="text-gray-muted mb-8">Proficient with industry-leading engines and tools:</p>
+          <p className="text-gray-muted mb-8">Con dominio de los motores y herramientas líderes de la industria:</p>
           <div className="flex flex-wrap justify-center gap-8">
             {[
               { label: 'Unreal Engine', value: '4.x / 5.x' },
               { label: 'Unity', value: '2021 / 2022+' },
-              { label: 'Programming', value: 'C++ / C#' },
+              { label: 'Programación', value: 'C++ / C#' },
             ].map((item, i) => (
               <motion.div key={i} whileHover={{ scale: 1.05 }}>
                 <p className="text-electric-blue font-bold text-lg">{item.value}</p>

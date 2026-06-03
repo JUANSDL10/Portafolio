@@ -8,14 +8,15 @@ const Navbar = () => {
   const [scrolled, setScrolled] = useState(false)
 
   const navItems = [
-    { label: 'Home', id: 'home' },
-    { label: 'About', id: 'about' },
-    { label: 'Skills', id: 'skills' },
+    { label: 'Inicio', id: 'home' },
+    { label: 'Sobre Mí', id: 'about' },
+    { label: 'Habilidades', id: 'skills' },
     { label: 'Web Dev', id: 'web' },
-    { label: 'Games', id: 'games' },
-    { label: '3D Art', id: 'art3d' },
-    { label: 'Experience', id: 'experience' },
-    { label: 'Contact', id: 'contact' },
+    { label: 'Juegos', id: 'games' },
+    { label: 'Arte 3D', id: 'art3d' },
+    { label: 'Proyectos', id: 'projects' },
+    { label: 'Experiencia', id: 'experience' },
+    { label: 'Contacto', id: 'contact' },
   ]
 
   useEffect(() => {
@@ -112,7 +113,7 @@ const Navbar = () => {
             whileTap={{ scale: 0.95 }}
             className="hidden md:block px-6 py-2.5 bg-gradient-to-r from-electric-blue to-neon-cyan text-dark-navy font-semibold rounded-lg hover:shadow-glow transition-all cursor-pointer"
           >
-            Get in Touch
+            Contáctame
           </motion.a>
 
           {/* Mobile Menu Button */}

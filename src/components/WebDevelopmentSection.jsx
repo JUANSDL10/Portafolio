@@ -19,13 +19,13 @@ const WebDevelopmentSection = () => {
       techs: ['Node.js', 'Express.js', 'PHP', 'RESTful APIs', 'WebSockets'],
     },
     {
-      title: 'Databases',
+      title: 'Bases de Datos',
       icon: FaDatabase,
       color: 'from-purple-500 to-pink-500',
       techs: ['MongoDB', 'PostgreSQL', 'MySQL', 'Firebase'],
     },
     {
-      title: 'Tools & DevOps',
+      title: 'Herramientas & DevOps',
       icon: FaCode,
       color: 'from-orange-500 to-red-500',
       techs: ['Git', 'Docker', 'GitHub Pages', 'Vercel', 'Vite'],
@@ -41,9 +41,9 @@ const WebDevelopmentSection = () => {
 
       <div className="max-w-7xl mx-auto px-6 md:px-10">
         <SectionHeader
-          subtitle="Full Stack Development"
-          title="Web Development Expertise"
-          description="Specialized in building scalable, performant web applications using modern MERN stack and traditional PHP backends."
+          subtitle="Desarrollo Full Stack"
+          title="Experiencia en Desarrollo Web"
+          description="Especializado en construir aplicaciones web escalables y de alto rendimiento con el stack MERN moderno y backends tradicionales en PHP."
           align="left"
         />
 
@@ -103,9 +103,9 @@ const WebDevelopmentSection = () => {
           className="mt-16 md:mt-24 grid grid-cols-1 md:grid-cols-3 gap-6"
         >
           {[
-            { label: 'API Response Time', value: '< 200ms', icon: '⚡' },
-            { label: 'Lighthouse Score', value: '95+', icon: '📊' },
-            { label: 'Code Coverage', value: '85%+', icon: '✅' },
+            { label: 'Tiempo de Respuesta API', value: '< 200ms', icon: '⚡' },
+            { label: 'Puntuación Lighthouse', value: '95+', icon: '📊' },
+            { label: 'Cobertura de Código', value: '85%+', icon: '✅' },
           ].map((metric, i) => (
             <motion.div
               key={i}

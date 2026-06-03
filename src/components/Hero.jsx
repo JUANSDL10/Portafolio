@@ -162,13 +162,13 @@ export default function Hero() {
             className="space-y-8"
           >
             {/* Badge */}
-            <FloatingBadge label="🚀 Full Stack Developer" delay={0.1} />
+            <FloatingBadge label="🚀 Desarrollador Full Stack" delay={0.1} />
 
             {/* Main Heading */}
             <div className="space-y-2">
               <SplitText text="Juan Silva" size="lg" delay={0.2} />
               <SplitText
-                text="Multimedia Developer"
+                text="Desarrollador Multimedia"
                 size="md"
                 delay={0.35}
               />
@@ -181,7 +181,7 @@ export default function Hero() {
               transition={{ duration: 0.6, delay: 0.5 }}
               className="text-lg md:text-xl text-gray-300 leading-relaxed max-w-lg"
             >
-              I create interactive digital experiences through <span className="text-electric-blue font-semibold">Web Development</span>, <span className="text-neon-cyan font-semibold">Game Development</span> and <span className="text-bright-cyan font-semibold">3D Content</span> creation.
+              Creo experiencias digitales interactivas a través del <span className="text-electric-blue font-semibold">Desarrollo Web</span>, el <span className="text-neon-cyan font-semibold">Desarrollo de Videojuegos</span> y la creación de <span className="text-bright-cyan font-semibold">Contenido 3D</span>.
             </motion.p>
 
             {/* Stats */}
@@ -193,15 +193,15 @@ export default function Hero() {
             >
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-black text-electric-blue">10+</div>
-                <div className="text-xs md:text-sm text-gray-400">Projects</div>
+                <div className="text-xs md:text-sm text-gray-400">Proyectos</div>
               </div>
               <div className="text-center border-l border-r border-electric-blue/20">
                 <div className="text-2xl md:text-3xl font-black text-neon-cyan">3</div>
-                <div className="text-xs md:text-sm text-gray-400">Specialties</div>
+                <div className="text-xs md:text-sm text-gray-400">Especialidades</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl md:text-3xl font-black text-bright-cyan">5+</div>
-                <div className="text-xs md:text-sm text-gray-400">Years Exp.</div>
+                <div className="text-xs md:text-sm text-gray-400">Años Exp.</div>
               </div>
             </motion.div>
 
@@ -216,13 +216,13 @@ export default function Hero() {
                 onClick={() => scrollToSection('projects')}
                 variant="primary"
               >
-                View Portfolio <FaArrowRight size={16} />
+                Ver Portafolio <FaArrowRight size={16} />
               </MagneticButton>
               <MagneticButton
                 onClick={handleDownloadCV}
                 variant="secondary"
               >
-                <FaDownload size={16} /> Download CV
+                <FaDownload size={16} /> Descargar CV
               </MagneticButton>
             </motion.div>
 
@@ -315,7 +315,7 @@ export default function Hero() {
                   transition={{ delay: 0.5 }}
                   className="text-xs text-gray-400 mt-4 tracking-widest"
                 >
-                  CREATIVE DEVELOPER
+                  DESARROLLADOR CREATIVO
                 </motion.div>
               </div>
             </div>
@@ -329,7 +329,7 @@ export default function Hero() {
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-center"
       >
-        <div className="text-xs text-gray-400 mb-2">Scroll to explore</div>
+        <div className="text-xs text-gray-400 mb-2">Desplázate para explorar</div>
         <div className="w-6 h-10 border-2 border-electric-blue/30 rounded-full flex items-start justify-center p-2 mx-auto">
           <motion.div
             animate={{ y: [0, 6, 0] }}
