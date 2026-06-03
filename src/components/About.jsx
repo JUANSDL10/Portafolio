@@ -138,7 +138,7 @@ export default function About() {
           {[
             { label: 'Proyectos', value: '10+', icon: '📦' },
             { label: 'Tecnologías', value: '20+', icon: '⚙️' },
-            { label: 'Años Exp.', value: '5+', icon: '📚' },
+            { label: 'Años de Exp. Laboral', value: '5+', icon: '💼' },
             { label: 'Pasión', value: '200%', icon: '🔥' },
           ].map((fact, i) => (
             <motion.div

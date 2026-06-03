@@ -1,15 +1,22 @@
 import { motion } from 'framer-motion'
 import {
   SiReact,
+  SiJavascript,
   SiNodedotjs,
+  SiExpress,
   SiMongodb,
-  SiPostgresql,
+  SiMysql,
   SiTailwindcss,
+  SiFramer,
   SiGit,
-  SiDocker,
-  SiTypescript,
+  SiCplusplus,
+  SiThreedotjs,
+  SiUnrealengine,
+  SiBlender,
+  SiAutodeskmaya,
+  SiAutodesk,
 } from 'react-icons/si'
-import { FaPhp, FaFigma } from 'react-icons/fa'
+import { FaPhp, FaCode, FaCube, FaCubes, FaPalette, FaFilm } from 'react-icons/fa'
 import { containerVariants, itemVariants } from '../utils/animations/animationVariants'
 import SectionHeader from './SectionHeader'
 
@@ -19,36 +26,40 @@ export default function Skills() {
       category: 'Frontend',
       skills: [
         { name: 'React.js', icon: SiReact, level: 'Avanzado' },
-        { name: 'TypeScript', icon: SiTypescript, level: 'Intermedio' },
+        { name: 'JavaScript', icon: SiJavascript, level: 'Avanzado' },
         { name: 'Tailwind CSS', icon: SiTailwindcss, level: 'Avanzado' },
-        { name: 'Next.js', icon: SiReact, level: 'Intermedio' },
+        { name: 'Framer Motion', icon: SiFramer, level: 'Intermedio' },
       ],
     },
     {
-      category: 'Backend',
+      category: 'Backend & Datos',
       skills: [
         { name: 'Node.js', icon: SiNodedotjs, level: 'Avanzado' },
+        { name: 'Express.js', icon: SiExpress, level: 'Avanzado' },
         { name: 'PHP', icon: FaPhp, level: 'Intermedio' },
-        { name: 'Express.js', icon: SiNodedotjs, level: 'Avanzado' },
-        { name: 'REST APIs', icon: FaPhp, level: 'Avanzado' },
-      ],
-    },
-    {
-      category: 'Bases de Datos',
-      skills: [
         { name: 'MongoDB', icon: SiMongodb, level: 'Avanzado' },
-        { name: 'PostgreSQL', icon: SiPostgresql, level: 'Intermedio' },
-        { name: 'MySQL', icon: SiPostgresql, level: 'Intermedio' },
-        { name: 'Firebase', icon: SiMongodb, level: 'Intermedio' },
+        { name: 'MySQL', icon: SiMysql, level: 'Avanzado' },
       ],
     },
     {
-      category: 'Herramientas & DevOps',
+      category: 'Gráficos & Motores',
       skills: [
-        { name: 'Git', icon: SiGit, level: 'Avanzado' },
-        { name: 'Docker', icon: SiDocker, level: 'Intermedio' },
-        { name: 'Figma', icon: FaFigma, level: 'Avanzado' },
-        { name: 'Vite', icon: SiNodedotjs, level: 'Avanzado' },
+        { name: 'C++', icon: SiCplusplus, level: 'Intermedio' },
+        { name: 'OpenGL / GLSL', icon: FaCode, level: 'Intermedio' },
+        { name: 'Three.js / WebGL', icon: SiThreedotjs, level: 'Intermedio' },
+        { name: 'Unreal Engine 5', icon: SiUnrealengine, level: 'Intermedio' },
+      ],
+    },
+    {
+      category: 'Arte 3D & Video',
+      skills: [
+        { name: 'Blender', icon: SiBlender, level: 'Avanzado' },
+        { name: 'Maya', icon: SiAutodeskmaya, level: 'Avanzado' },
+        { name: 'ZBrush', icon: FaCube, level: 'Avanzado' },
+        { name: '3ds Max', icon: SiAutodesk, level: 'Intermedio' },
+        { name: 'Substance 3D', icon: FaCubes, level: 'Intermedio' },
+        { name: 'Adobe Premiere', icon: FaFilm, level: 'Intermedio' },
+        { name: 'Photoshop', icon: FaPalette, level: 'Intermedio' },
       ],
     },
   ]
@@ -144,7 +155,7 @@ export default function Skills() {
             {
               title: 'Desarrollo Frontend',
               percentage: 90,
-              description: 'React, TypeScript, frameworks CSS modernos',
+              description: 'React, JavaScript, Tailwind y animaciones fluidas',
             },
             {
               title: 'Desarrollo Backend',

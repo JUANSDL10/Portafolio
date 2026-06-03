@@ -14,7 +14,6 @@ import {
   SiThreedotjs,
   SiBlender,
   SiUnrealengine,
-  SiFigma,
 } from 'react-icons/si'
 import { VscVscode } from 'react-icons/vsc'
 import { FaArrowRight, FaGithub, FaCube, FaPalette } from 'react-icons/fa'
@@ -55,11 +54,14 @@ export const skills = [
     ],
   },
   {
-    title: 'Arte 3D & Motores',
+    title: 'Arte 3D & Video',
     items: [
       { name: 'Blender', icon: SiBlender },
       { name: 'Maya', icon: FaCube },
       { name: 'ZBrush', icon: FaCube },
+      { name: '3ds Max', icon: FaCube },
+      { name: 'Substance 3D', icon: FaCube },
+      { name: 'Adobe Premiere', icon: FaPalette },
       { name: 'Unreal Engine 5', icon: SiUnrealengine },
     ],
   },
@@ -69,7 +71,6 @@ export const skills = [
       { name: 'Git', icon: SiGit },
       { name: 'GitHub', icon: FaGithub },
       { name: 'VS Code', icon: VscVscode },
-      { name: 'Figma', icon: SiFigma },
       { name: 'Photoshop', icon: FaPalette },
     ],
   },
@@ -203,7 +204,7 @@ export const projects = [
       'Dirección de arte y optimización: World Partition para gestionar iluminación, texturas y follaje denso en mapas mixtos (interiores/exteriores).',
       'Pipeline 3D combinado en Blender, Maya y ZBrush: esculpido digital, retopología y rigging profesional de los personajes.',
     ],
-    tech: ['Unreal Engine 5', 'C++', 'Blueprints', 'Blender', 'Maya', 'ZBrush', 'Figma', 'Photoshop'],
+    tech: ['Unreal Engine 5', 'C++', 'Blueprints', 'Blender', 'Maya', 'ZBrush', '3ds Max', 'Substance 3D', 'Adobe Premiere', 'Photoshop'],
     links: {
       instagram: 'https://www.instagram.com/myth.cup?igsh=MXZyYm1hcDU1a2dkaA==',
     },
@@ -324,7 +325,7 @@ export const projects = [
       'Retopología en Maya y texturizado/shading en Blender sobre una paleta vibrante (verdes, dorados y magentas) con buena respuesta lumínica.',
       'Rigging profesional: esqueleto y pesos preparados para animación en tiempo real dentro del motor.',
     ],
-    tech: ['ZBrush', 'Maya', 'Blender'],
+    tech: ['ZBrush', 'Maya', '3ds Max', 'Blender', 'Substance 3D'],
     links: {
       youtube: 'https://youtu.be/n9rh-qAWlhE',
     },
@@ -355,7 +356,7 @@ export const projects = [
       'Mapas de relieve: normales y bump para simular piel anfibia rugosa y un acabado metálico desgastado en la armadura.',
       'Pipeline combinado: alto poligonaje en ZBrush, retopología en Maya y shading/texturizado final en Blender.',
     ],
-    tech: ['ZBrush', 'Maya', 'Blender'],
+    tech: ['ZBrush', 'Maya', '3ds Max', 'Blender', 'Substance 3D'],
     links: {
       youtube: 'https://youtu.be/Qqr9SwoPSfo',
     },
@@ -363,10 +364,6 @@ export const projects = [
       { src: `${IMG}/modelado y animacion/mythcup/kappa1.png`, caption: 'Kappa 1 — render del personaje: vista frontal con caparazón y placas de protección.' },
       { src: `${IMG}/modelado y animacion/mythcup/kappa.png`, caption: 'Kappa 2 — pase de materiales y shading: piel anfibia y armadura metálica desgastada.' },
       { src: `${IMG}/modelado y animacion/mythcup/kappa3.png`, caption: 'Kappa 3 — vista de detalle: anatomía orgánica (garras, rostro) frente a placas rígidas.' },
-      { src: `${IMG}/modelado y animacion/modelado alto poligonaje/Captura de pantalla 2025-05-07 093522.png`, caption: 'Proceso: esculpido de alto poligonaje en ZBrush (caparazón y placas).' },
-      { src: `${IMG}/modelado y animacion/modelado alto poligonaje/Captura de pantalla 2025-05-11 112647.png`, caption: 'Proceso: retopología en Maya que preserva los volúmenes críticos para animar.' },
-      { src: `${IMG}/modelado y animacion/modelado alto poligonaje/Captura de pantalla 2025-05-11 113256.png`, caption: 'Proceso: mapas de normales y relieve para la piel anfibia rugosa.' },
-      { src: `${IMG}/modelado y animacion/modelado alto poligonaje/Captura de pantalla 2025-05-11 114410.png`, caption: 'Proceso: acabado metálico desgastado en la armadura (shading en Blender).' },
     ],
   },
 ]

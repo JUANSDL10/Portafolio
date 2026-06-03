@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaReact, FaNode, FaDatabase, FaCode } from 'react-icons/fa'
+import { FaReact, FaNode, FaDatabase } from 'react-icons/fa'
 import { containerVariants, itemVariants } from '../utils/animations/animationVariants'
 import SectionHeader from './SectionHeader'
 import ProjectCard from './ProjectCard'
@@ -12,7 +12,6 @@ const WebDevelopmentSection = () => {
     { title: 'Frontend', icon: FaReact, color: 'from-blue-500 to-cyan-500', techs: ['React.js', 'JavaScript', 'Tailwind CSS', 'Framer Motion'] },
     { title: 'Backend', icon: FaNode, color: 'from-green-500 to-emerald-500', techs: ['Node.js', 'Express.js', 'PHP', 'APIs REST', 'WebSockets'] },
     { title: 'Bases de Datos', icon: FaDatabase, color: 'from-purple-500 to-pink-500', techs: ['MongoDB', 'MySQL', 'SQL Avanzado'] },
-    { title: 'Seguridad & Tooling', icon: FaCode, color: 'from-orange-500 to-red-500', techs: ['JWT', 'Bcrypt', 'Multer', 'Git', 'Vite'] },
   ]
 
   return (
@@ -35,7 +34,7 @@ const WebDevelopmentSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: '-100px' }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {webTechs.map((category) => {
             const Icon = category.icon
