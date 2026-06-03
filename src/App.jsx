@@ -28,7 +28,7 @@ function App() {
     <ProjectModalProvider value={openProject}>
     <div className="min-h-screen bg-gradient-to-b from-dark-navy via-charcoal-black to-dark-navy text-pure-white overflow-x-hidden">
       {/* WebGL Shader – fondo animado de ondas cromáticas */}
-      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -60, opacity: 0.18, mixBlendMode: 'screen' }}>
+      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -60, opacity: 0.32, mixBlendMode: 'screen' }}>
         <WebGLShader />
       </div>
 

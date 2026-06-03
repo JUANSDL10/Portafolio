@@ -133,12 +133,11 @@ export default function About() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6"
+          className="grid grid-cols-3 gap-4 md:gap-6"
         >
           {[
-            { label: 'Proyectos', value: '10+', icon: '📦' },
+            { label: 'Proyectos', value: '9+', icon: '📦' },
             { label: 'Tecnologías', value: '20+', icon: '⚙️' },
-            { label: 'Años de Exp. Laboral', value: '5+', icon: '💼' },
             { label: 'Pasión', value: '200%', icon: '🔥' },
           ].map((fact, i) => (
             <motion.div
