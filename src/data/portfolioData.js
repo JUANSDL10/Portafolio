@@ -265,7 +265,7 @@ export const projects = [
     ],
     tech: ['C++', 'OpenGL', 'GLSL Shaders', 'WinAPI'],
     links: {
-      youtube: 'https://youtu.be/_14m-Zapyzo',
+      youtube: 'https://youtu.be/_l4m-Zapyzo',
     },
     gallery: [
       { src: `${IMG}/juegos/graficas 1/Captura de pantalla 2026-06-03 132353.png`, caption: 'Terreno generado por heightmaps con multitexturizado (OpenGL).' },
@@ -326,7 +326,7 @@ export const projects = [
     ],
     tech: ['ZBrush', 'Maya', 'Blender'],
     links: {
-      youtube: 'https://youtu.be/n9rh-qAWIhE',
+      youtube: 'https://youtu.be/n9rh-qAWlhE',
     },
     gallery: [
       { src: `${IMG}/juegos/MYTHCUP/quetz.jfif`, caption: 'Quetzalcóatl — render final del personaje en motor.' },

@@ -20,8 +20,8 @@ export default function Contact() {
     {
       icon: FaPhone,
       label: 'Teléfono',
-      value: '+52 (555) 123-4567',
-      link: 'tel:+525551234567',
+      value: '+52 828 146 3975',
+      link: 'tel:+528281463975',
     },
   ]
 
