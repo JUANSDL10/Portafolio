@@ -6,3 +6,8 @@ dist/
 .env.*
 .vscode/
 .idea/
+
+# Tooling local (Claude / agentes)
+.claude/
+.agents/
+skills-lock.json

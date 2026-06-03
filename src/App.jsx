@@ -7,17 +7,25 @@ import Skills from './components/Skills'
 import WebDevelopmentSection from './components/WebDevelopmentSection'
 import GameDevelopmentSection from './components/GameDevelopmentSection'
 import Art3DSection from './components/Art3DSection'
+import ARSection from './components/ARSection'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import ProjectDetailModal from './components/ProjectDetailModal'
+import { ProjectModalProvider } from './context/ProjectModalContext'
 import { WebGLShader } from './components/ui/web-gl-shader'
 import { useScrollProgress } from './hooks/useScrollProgress'
+import { useHashRoute } from './hooks/useHashRoute'
+import { getProjectBySlug } from './data/portfolioData'
 
 function App() {
   const scrollProgress = useScrollProgress()
+  const { slug, openProject, closeProject } = useHashRoute()
+  const activeProject = getProjectBySlug(slug)
 
   return (
+    <ProjectModalProvider value={openProject}>
     <div className="min-h-screen bg-gradient-to-b from-dark-navy via-charcoal-black to-dark-navy text-pure-white overflow-x-hidden">
       {/* WebGL Shader – fondo animado de ondas cromáticas */}
       <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -60, opacity: 0.18, mixBlendMode: 'screen' }}>
@@ -90,6 +98,9 @@ function App() {
           <div id="art3d">
             <Art3DSection />
           </div>
+          <div id="ar">
+            <ARSection />
+          </div>
           <Projects />
           <Experience />
           <Contact />
@@ -115,7 +126,11 @@ function App() {
           backgroundSize: '200px 200px',
         }}
       />
+
+      {/* Vista individual de proyecto (deep-link #/proyecto/<slug>) */}
+      <ProjectDetailModal project={activeProject} onClose={closeProject} />
     </div>
+    </ProjectModalProvider>
   )
 }
 

@@ -14,6 +14,7 @@ const Navbar = () => {
     { label: 'Web Dev', id: 'web' },
     { label: 'Juegos', id: 'games' },
     { label: 'Arte 3D', id: 'art3d' },
+    { label: 'AR', id: 'ar' },
     { label: 'Proyectos', id: 'projects' },
     { label: 'Experiencia', id: 'experience' },
     { label: 'Contacto', id: 'contact' },

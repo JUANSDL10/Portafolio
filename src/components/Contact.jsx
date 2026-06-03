@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaGithub, FaLinkedin } from 'react-icons/fa'
+import { FaEnvelope, FaMapMarkerAlt, FaPhone, FaGithub, FaLinkedin, FaDownload } from 'react-icons/fa'
 import { containerVariants, itemVariants } from '../utils/animations/animationVariants'
 import SectionHeader from './SectionHeader'
 
@@ -234,13 +234,13 @@ export default function Contact() {
             ¿Quieres más detalles? Descarga mi CV o explora mis proyectos arriba.
           </p>
           <motion.a
-            href="#home"
-            onClick={() => window.location.hash = ''}
+            href={`${import.meta.env.BASE_URL}CV_Juan_Silva.pdf`}
+            download="CV_Juan_Silva.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-electric-blue to-neon-cyan text-dark-navy font-semibold hover:shadow-glow transition-all"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Volver al Inicio ↑
+            <FaDownload size={16} /> Descargar CV
           </motion.a>
         </motion.div>
       </div>

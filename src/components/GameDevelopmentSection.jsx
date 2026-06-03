@@ -1,36 +1,14 @@
 import { motion } from 'framer-motion'
-import { FaGamepad, FaUnity, FaCode } from 'react-icons/fa'
-import { containerVariants, itemVariants } from '../utils/animations/animationVariants'
+import { containerVariants } from '../utils/animations/animationVariants'
 import SectionHeader from './SectionHeader'
+import ProjectCard from './ProjectCard'
+import { getProjectsByCategory } from '../data/portfolioData'
 
 const GameDevelopmentSection = () => {
-  const games = [
-    {
-      title: 'Proyecto de Juego 1',
-      description: 'Juego de acción con mecánicas inmersivas y jugabilidad intensa',
-      tags: ['C++', 'Blueprints', 'Física', 'IA'],
-      features: ['Sistemas de IA avanzados', 'Renderizado optimizado', 'Soporte multijugador'],
-      placeholder: 'Juego 1',
-    },
-    {
-      title: 'Proyecto de Juego 2',
-      description: 'Mecánicas de puzzle con visión artística y diseño procedural',
-      tags: ['C++', 'Generación Procedural', 'Diseño de Audio'],
-      features: ['Niveles procedurales', 'Audio dinámico', 'Multiplataforma'],
-      placeholder: 'Juego 2',
-    },
-    {
-      title: 'Proyecto de Juego 3',
-      description: 'Juego de aventura con narrativa rica e interacciones complejas',
-      tags: ['C#', 'Unity', 'Animación', 'Narrativa'],
-      features: ['Narrativas complejas', 'Cinemáticas cuidadas', 'Interacciones ricas'],
-      placeholder: 'Juego 3',
-    },
-  ]
+  const games = getProjectsByCategory('games')
 
   return (
     <section id="game-dev" className="py-20 md:py-32 relative overflow-hidden">
-      {/* Background */}
       <div className="absolute inset-0 -z-10">
         <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-neon-cyan/5 rounded-full blur-3xl"></div>
       </div>
@@ -39,7 +17,7 @@ const GameDevelopmentSection = () => {
         <SectionHeader
           subtitle="Desarrollo de Videojuegos"
           title="Portafolio de Juegos"
-          description="Creando experiencias de juego atractivas con C++, C# y motores de la industria como Unreal Engine y Unity."
+          description="Desde un multijugador en Unreal Engine 5 hasta un motor gráfico nativo en C++/OpenGL y un juego 3D en el navegador. Cada tarjeta abre su galería y detalles técnicos."
           align="left"
         />
 
@@ -47,62 +25,15 @@ const GameDevelopmentSection = () => {
           variants={containerVariants}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: '-100px' }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8"
+          viewport={{ once: true, amount: 0.1 }}
+          className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"
         >
-          {games.map((game, index) => (
-            <motion.div
-              key={game.title}
-              variants={itemVariants}
-              className="group relative"
-            >
-              {/* Card */}
-              <div className="relative bg-dark-navy/40 backdrop-blur-xl border border-electric-blue/20 rounded-2xl overflow-hidden hover:border-electric-blue/50 transition-all duration-300 h-full flex flex-col">
-                {/* Game Thumbnail Placeholder */}
-                <div className="relative w-full h-40 bg-gradient-to-br from-electric-blue/10 to-neon-cyan/5 border-b border-electric-blue/20 flex items-center justify-center overflow-hidden group/thumb">
-                  <div className="absolute inset-0 opacity-0 group-hover/thumb:opacity-100 transition-opacity duration-300 bg-gradient-to-r from-electric-blue/20 to-neon-cyan/10"></div>
-                  <div className="relative text-center">
-                    <FaGamepad className="text-4xl text-electric-blue/30 mx-auto mb-2" />
-                    <p className="text-sm text-electric-blue/50 font-semibold">{game.placeholder}</p>
-                  </div>
-                </div>
-
-                {/* Content */}
-                <div className="flex-1 p-6 md:p-8 flex flex-col">
-                  <h3 className="text-xl font-bold text-pure-white mb-2">{game.title}</h3>
-                  <p className="text-sm text-gray-muted mb-6 flex-1">{game.description}</p>
-
-                  {/* Tags */}
-                  <div className="flex flex-wrap gap-2 mb-4">
-                    {game.tags.map((tag) => (
-                      <span
-                        key={tag}
-                        className="px-3 py-1 text-xs rounded-full bg-electric-blue/10 border border-electric-blue/30 text-electric-blue"
-                      >
-                        {tag}
-                      </span>
-                    ))}
-                  </div>
-
-                  {/* Features */}
-                  <div className="space-y-1 text-sm">
-                    {game.features.map((feature) => (
-                      <p key={feature} className="text-gray-muted flex items-center gap-2">
-                        <span className="w-1 h-1 rounded-full bg-neon-cyan"></span>
-                        {feature}
-                      </p>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Bottom Line */}
-                <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r from-electric-blue to-neon-cyan transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-500"></div>
-              </div>
-            </motion.div>
+          {games.map((game, i) => (
+            <ProjectCard key={game.slug} project={game} index={i} />
           ))}
         </motion.div>
 
-        {/* Engine Stats */}
+        {/* Stats de motores / tecnologías */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -110,12 +41,12 @@ const GameDevelopmentSection = () => {
           viewport={{ once: true, margin: '-100px' }}
           className="mt-16 md:mt-24 text-center"
         >
-          <p className="text-gray-muted mb-8">Con dominio de los motores y herramientas líderes de la industria:</p>
+          <p className="text-gray-muted mb-8">Motores y tecnologías gráficas con las que trabajo:</p>
           <div className="flex flex-wrap justify-center gap-8">
             {[
-              { label: 'Unreal Engine', value: '4.x / 5.x' },
-              { label: 'Unity', value: '2021 / 2022+' },
-              { label: 'Programación', value: 'C++ / C#' },
+              { label: 'Motor AAA', value: 'Unreal Engine 5' },
+              { label: 'Gráficos Nativos', value: 'C++ / OpenGL' },
+              { label: 'Gráficos Web', value: 'Three.js / WebGL' },
             ].map((item, i) => (
               <motion.div key={i} whileHover={{ scale: 1.05 }}>
                 <p className="text-electric-blue font-bold text-lg">{item.value}</p>

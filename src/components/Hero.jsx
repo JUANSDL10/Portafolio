@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaDownload, FaArrowRight } from 'react-icons/fa'
 import { useMagneticButton } from '../hooks/useMagneticButton'
 
-const resumeUrl = `${import.meta.env.BASE_URL}Juan_Silva_CV.txt`
+const resumeUrl = `${import.meta.env.BASE_URL}CV_Juan_Silva.pdf`
 
 /**
  * SplitText Component - Animates text line by line
@@ -98,7 +98,7 @@ export default function Hero() {
   const handleDownloadCV = () => {
     const link = document.createElement('a')
     link.href = resumeUrl
-    link.download = 'Juan_Silva_CV.txt'
+    link.download = 'CV_Juan_Silva.pdf'
     document.body.appendChild(link)
     link.click()
     document.body.removeChild(link)
