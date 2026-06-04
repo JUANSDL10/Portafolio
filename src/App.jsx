@@ -28,7 +28,7 @@ function App() {
     <ProjectModalProvider value={openProject}>
     <div className="min-h-screen bg-gradient-to-b from-dark-navy via-charcoal-black to-dark-navy text-pure-white overflow-x-hidden">
       {/* WebGL Shader – fondo animado de ondas cromáticas */}
-      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -60, opacity: 0.32, mixBlendMode: 'screen' }}>
+      <div className="fixed inset-0 pointer-events-none" style={{ zIndex: -60, opacity: 0.15, mixBlendMode: 'screen', willChange: 'opacity' }}>
         <WebGLShader />
       </div>
 
@@ -86,9 +86,15 @@ function App() {
         <Navbar />
 
         <main className="overflow-x-hidden">
-          <Hero />
-          <About />
-          <Skills />
+          <div id="home">
+            <Hero />
+          </div>
+          <div id="about">
+            <About />
+          </div>
+          <div id="skills">
+            <Skills />
+          </div>
           <div id="web">
             <WebDevelopmentSection />
           </div>
@@ -101,9 +107,15 @@ function App() {
           <div id="ar">
             <ARSection />
           </div>
-          <Projects />
-          <Experience />
-          <Contact />
+          <div id="projects">
+            <Projects />
+          </div>
+          <div id="experience">
+            <Experience />
+          </div>
+          <div id="contact">
+            <Contact />
+          </div>
         </main>
 
         <Footer />

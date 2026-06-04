@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { FaGithub, FaLinkedin, FaDownload, FaArrowRight } from 'react-icons/fa'
 import { LiquidButton } from './ui/liquid-glass-button'
 
-const resumeUrl = `${import.meta.env.BASE_URL}CV_Juan_Silva.pdf`
+const resumeUrl = encodeURI(`${import.meta.env.BASE_URL}CV — Juan Silva · Desarrollador Full Stack.pdf`)
 
 export default function Hero() {
   const scrollToSection = (id) => {

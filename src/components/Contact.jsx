@@ -234,7 +234,7 @@ export default function Contact() {
             ¿Quieres más detalles? Descarga mi CV o explora mis proyectos arriba.
           </p>
           <motion.a
-            href={`${import.meta.env.BASE_URL}CV_Juan_Silva.pdf`}
+            href={encodeURI(`${import.meta.env.BASE_URL}CV — Juan Silva · Desarrollador Full Stack.pdf`)}
             download="CV_Juan_Silva.pdf"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-gradient-to-r from-electric-blue to-neon-cyan text-dark-navy font-semibold hover:shadow-glow transition-all"
             whileHover={{ scale: 1.05 }}
