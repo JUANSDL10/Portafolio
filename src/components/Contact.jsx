@@ -142,7 +142,7 @@ export default function Contact() {
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="Juan Silva"
+                        placeholder=""
                         required
                         className="w-full bg-transparent border-b border-electric-blue/30 px-0 py-3 text-pure-white placeholder-gray-muted outline-none transition-all focus:border-electric-blue group-hover/input:border-electric-blue/50"
                       />
@@ -160,7 +160,7 @@ export default function Contact() {
                         type="email"
                         id="email"
                         name="email"
-                        placeholder="juan@example.com"
+                        placeholder=""
                         required
                         className="w-full bg-transparent border-b border-electric-blue/30 px-0 py-3 text-pure-white placeholder-gray-muted outline-none transition-all focus:border-electric-blue group-hover/input:border-electric-blue/50"
                       />
@@ -179,7 +179,7 @@ export default function Contact() {
                       type="text"
                       id="subject"
                       name="subject"
-                      placeholder="Colaboración en proyecto"
+                      placeholder=""
                       required
                       className="w-full bg-transparent border-b border-electric-blue/30 px-0 py-3 text-pure-white placeholder-gray-muted outline-none transition-all focus:border-electric-blue group-hover/input:border-electric-blue/50"
                     />
@@ -197,7 +197,7 @@ export default function Contact() {
                       id="message"
                       name="message"
                       rows="6"
-                      placeholder="Cuéntame sobre tu proyecto..."
+                      placeholder=""
                       required
                       className="w-full bg-transparent border-b border-electric-blue/30 px-0 py-3 text-pure-white placeholder-gray-muted outline-none transition-all focus:border-electric-blue resize-none group-hover/input:border-electric-blue/50"
                     ></textarea>

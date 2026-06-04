@@ -67,20 +67,6 @@ export default function Hero() {
               (MERN), motores gráficos y modelado 3D profesional.
             </p>
 
-            {/* Disponibilidad */}
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.5 }}
-              className="my-8 flex items-center justify-center gap-2"
-            >
-              <span className="relative flex h-3 w-3 items-center justify-center">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75" />
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500" />
-              </span>
-              <p className="text-xs font-medium text-green-500">Disponible para nuevos proyectos</p>
-            </motion.div>
-
             {/* CTAs */}
             <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
               <LiquidButton
